@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-primary: #f6c61c;
+  --color-black: black;
+  --color-white: white;
+}
+
+body {
+  font-family: Arial;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}

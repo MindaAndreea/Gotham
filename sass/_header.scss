@@ -1,0 +1,30 @@
+.header {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+
+  ul {
+    display: flex;
+    padding: 3rem;
+
+    a {
+      margin-right: calc(4rem + 3vw);
+      padding: 1rem;
+    }
+
+    a:hover {
+      background-color: var(--color-black);
+      color: var(--color-primary);
+      transform: scale(1.1);
+      transform-origin: center;
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+}

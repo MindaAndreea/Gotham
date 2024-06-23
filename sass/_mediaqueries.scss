@@ -1,0 +1,52 @@
+@mixin media-desktop-large {
+  @media screen and (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media screen and (max-width: 850px) {
+    @content;
+  }
+}
+
+@mixin media-medium-small {
+  @media screen and (max-width: 475px) {
+    @content;
+  }
+}
+
+@mixin media-small {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+@include media-medium-small {
+  .header {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin-bottom: calc(2rem + 1vw);
+    }
+
+    ul {
+      flex-direction: column;
+    }
+
+    #logo {
+      padding: 0.1rem calc(1rem + 3vw);
+    }
+  }
+}
+
+@include media-small {
+  .header {
+    #logo {
+      width: 60%;
+      height: 75%;
+      object-fit: cover;
+    }
+  }
+}
